@@ -51,7 +51,7 @@
       const link2 = liff.permanentLink.createUrl()
       document.getElementById("universalLink2").append(link2)
     }
-
+/*
     async function shareMsg() {
       await liff.shareTargetPicker([
         {
@@ -60,28 +60,33 @@
         }
       ])
     }
-
+*/
     function logOut() {
       liff.logout()
       window.location.reload()
     }
 
+/*
     function closed() {
       liff.closeWindow()
     }
-
+    */
+/*
     async function scanCode() {
       const result = await liff.scanCode()
       document.getElementById("scanCode").append(result.value)
     }
-    
+    */
+
+   /*
     function openWindow() {
       liff.openWindow({
         url: "https://line.me",
         external: true
       })
     }
-
+    */
+/*
     async function getFriendship() {
       const friend = await liff.getFriendship()
       document.getElementById("friendship").append(friend.friendFlag)
@@ -91,7 +96,8 @@
         }
       }
     }
-
+    */
+/*
     async function sendMsg() {
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
@@ -104,7 +110,7 @@
         alert("Message sent")
       }
     }
-
+*/
     function getContext() {
       if (liff.getContext() != null) {
         document.getElementById("type").append(liff.getContext().type)
@@ -143,7 +149,7 @@
       liff.ready.then(() => {
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
-          //getEnvironment()
+          getEnvironment()
           //getUserProfile()
           //getContext()
           getFriendship()
