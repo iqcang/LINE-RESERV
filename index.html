@@ -135,7 +135,6 @@
       } else {
         document.getElementById("btnMsg").style.display = "none"
         document.getElementById("btnScanCode").style.display = "none"
-        document.getElementById("btnLogOut").style.display = "none"
         document.getElementById("btnClose").style.display = "none"
       }
     }
@@ -144,11 +143,11 @@
       liff.ready.then(() => {
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
-          getEnvironment()
-          getUserProfile()
-          getContext()
+          //getEnvironment()
+          //getUserProfile()
+          //getContext()
           getFriendship()
-          createUniversalLink()
+          //createUniversalLink()
         } else {
           liff.login()
         }
